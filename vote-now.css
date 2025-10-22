@@ -7,6 +7,12 @@
     --footer-text-color: #ffffff;
 }
 
+@media screen and (max-width: 1120px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
 body {
     margin: 0;
     font-family: Hind, Helvetica, Arial, sans-serif;
@@ -39,6 +45,12 @@ header {
     padding: 4rem;
 }
 
+@media screen and (max-width: 1120px) {
+    header {
+        padding: 2rem;
+    }
+}
+
 header h1,
 header p {
     max-width: var(--page-width);
@@ -53,6 +65,10 @@ header h1 {
 
 header p {
     text-align: left;
+}
+
+header p img {
+    max-width: 100%;
 }
 
 
@@ -79,7 +95,7 @@ main h3 {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 1120px) {
     #how-to-vote {
         float: left;
         width: 50%;
@@ -100,8 +116,6 @@ main h3 {
 #how-to-vote h3 {
     font-weight: bold;
 }
-
-section#how-to-vote .number {}
 
 a.button {
     display: inline-block;
@@ -133,10 +147,16 @@ footer .flex {
     margin: auto;
 }
 
-footer .flex {
-    display: flex;
-}
+@media screen and (min-width: 1120px) {
+    footer {
+        padding: 2rem;
+    }
 
-footer .flex div {
-    flex: 1;
+    footer .flex {
+        display: flex;
+    }
+
+    footer .flex div {
+        flex: 1;
+    }
 }
