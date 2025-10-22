@@ -1,0 +1,142 @@
+:root {
+    --highlight-color: #366883;
+    --highlight-contrast: #ffffff;
+    --font-family: 'Hind', Helvetica, Arial, sans-serif;
+    --page-width: 88rem;
+    --footer-background: #232f36;
+    --footer-text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Hind, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-size: 2.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--highlight-color);
+    color: var(--highlight-contrast);
+    padding: 4rem;
+}
+
+header h1,
+header p {
+    max-width: var(--page-width);
+    margin: auto;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+header p {
+    text-align: left;
+}
+
+
+main {
+    max-width: var(--page-width);
+    margin: auto;
+    padding: 4rem;
+}
+
+main h1,
+main h2,
+main h3 {
+    color: var(--highlight-color);
+}
+
+
+/* How To Vote */
+#how-to-vote {
+    border: 4px solid var(--highlight-color);
+    padding: 2rem;
+    padding-top: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 70rem) {
+    #how-to-vote {
+        float: left;
+        width: 50%;
+        margin-right: 2rem;
+    }
+}
+
+#how-to-vote .vote {
+    display: block;
+    float: right;
+    width: 16rem;
+}
+
+#how-to-vote h2 {
+    font-weight: bold;
+}
+
+#how-to-vote h3 {
+    font-weight: bold;
+}
+
+section#how-to-vote .number {}
+
+a.button {
+    display: inline-block;
+    background-color: var(--highlight-color);
+    color: var(--highlight-contrast);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+a.button:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    padding: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    font-size: smaller;
+}
+
+footer .imprint,
+footer .flex {
+    max-width: var(--page-width);
+    margin: auto;
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer .flex div {
+    flex: 1;
+}

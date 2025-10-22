@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "ISOC",
+        "SIG"
+    ],
+
+    "javascript.format.enable": false,
+    "javascript.validate.enable": false,
+    "standard.enable": true,
+    "standard.autoFixOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+    },
+    
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+
+    "[html]": {
+        "editor.formatOnSave": true
+    }
+}
