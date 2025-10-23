@@ -154,15 +154,17 @@ footer .flex {
 }
 
 @media screen and (min-width: 1120px) {
-    footer {
-        padding: 2rem;
-    }
-
     footer .flex {
         display: flex;
     }
 
     footer .flex div {
         flex: 1;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    footer {
+        padding: 2rem;
     }
 }
