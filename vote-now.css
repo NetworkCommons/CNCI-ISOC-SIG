@@ -5,6 +5,7 @@
     --page-width: 88rem;
     --footer-background: #232f36;
     --footer-text-color: #ffffff;
+    --footer-link-color: #76cfff;
 }
 
 @media screen and (max-width: 1120px) {
@@ -147,7 +148,10 @@ footer {
     font-size: smaller;
 }
 
-footer .imprint,
+footer a {
+    color: var(--footer-link-color);
+}
+
 footer .flex {
     max-width: var(--page-width);
     margin: auto;
@@ -156,10 +160,11 @@ footer .flex {
 @media screen and (min-width: 1120px) {
     footer .flex {
         display: flex;
+        flex-wrap: wrap;
     }
 
     footer .flex div {
-        flex: 1;
+        width: 50%;
     }
 }
 
